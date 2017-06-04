@@ -105,6 +105,7 @@ public class HttpSender {
             conn.setDoOutput(true); //default false
             conn.setDoInput(true); //default true
             conn.setUseCaches(false); //mostly post doesn't use cache
+            conn.setRequestMethod("POST");
 
             out = conn.getOutputStream();
             //sending data to post(where different from get)
